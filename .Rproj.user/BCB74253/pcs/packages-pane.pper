@@ -1,0 +1,7 @@
+{
+    "installOptions": {
+        "installFromRepository": true,
+        "libraryPath": "/Users/serkanoral/Documents/R/Macro_Economics/renv/library/R-4.2/aarch64-apple-darwin20",
+        "installDependencies": true
+    }
+}
