@@ -1,0 +1,26 @@
+{
+    "id": "ABFEB9C3",
+    "path": "~/Documents/R/Macro_Economics/app/logic/plots.R",
+    "project_path": "app/logic/plots.R",
+    "type": "r_source",
+    "hash": "4107809517",
+    "contents": "",
+    "dirty": false,
+    "created": 1670919740268.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "21,24",
+        "scrollLine": "10"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1670964955,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1670964955616,
+    "read_only": false,
+    "read_only_alternatives": []
+}

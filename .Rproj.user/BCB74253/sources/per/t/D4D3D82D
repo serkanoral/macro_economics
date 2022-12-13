@@ -3,9 +3,9 @@
     "path": "~/Documents/R/Macro_Economics/app/logic/functions.R",
     "project_path": "app/logic/functions.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "771908861",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1670919312333.0,
     "source_on_save": false,
     "relative_order": 2,
@@ -16,11 +16,11 @@
         "scrollLine": "6"
     },
     "folds": "",
-    "lastKnownWriteTime": 1670759884,
+    "lastKnownWriteTime": 1670929025,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1670919749564,
+    "last_content_update": 1670929025893,
     "read_only": false,
     "read_only_alternatives": []
 }
