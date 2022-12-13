@@ -20,8 +20,6 @@ read_cpi <- function(country, index) {
   
 }
 
-  
-
 
     
 

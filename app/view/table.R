@@ -1,22 +1,21 @@
 box::use(
-  shiny[bootstrapPage, moduleServer, NS],
+  shiny[moduleServer, NS],
+  reactable[reactableOutput,renderReactable]
 )
 
 box::use(
-  app/view/table
+  app/logic/data
 )
 
 #' @export
 ui <- function(id) {
   ns <- NS(id)
-  bootstrapPage(
-    table$ui(ns("table"))
-  )
+  reactableOutput(ns("table"))
 }
 
 #' @export
 server <- function(id) {
   moduleServer(id, function(input, output, session) {
-    table$server("table")
+  output$table <- renderReactable(data$reac_table)
   })
 }
