@@ -9,7 +9,7 @@ box::use(
 box::use(
   shiny[moduleServer, NS],
   echarts4r[echarts4rOutput,renderEcharts4r],
-  reactable[reactable,reactableOutput]
+  
   
 )
 

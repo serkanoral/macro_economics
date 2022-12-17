@@ -33,10 +33,13 @@ load_data <- function() {
   pivot_longer(!c(date, country_abb), names_to = "index",values_to = "rate",values_drop_na = TRUE) |> 
   left_join(data_list$country_code, by = c("country_abb" = "wb_api2c")) |> 
   left_join(data_list$index_df, by = c("index" = "indexes")) |> 
-  rename("country_name" = country.name.en)
+  rename("country_name" = country.name.en)|> 
+   write_rds(file = "app/logic/df.rds")
   
   
 }
+
+
 
 
 

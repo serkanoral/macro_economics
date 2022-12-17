@@ -60,6 +60,8 @@ country_code <- countrycode::codelist_panel |>
 #' @export
 country_codes <- country_code |> pull(wb_api2c) 
 
+#' @export
+country_names <- country_code |> pull(country.name.en)
 
 # just index codes
 #' @export
@@ -76,7 +78,7 @@ index_df <- tibble(index_names = index_names ,  indexes = indexes)
 
 # the data we will import
 #' @export
-lists <- expand.grid(c("TR","US","FR"),c("CPI","PPI","URATE"),stringsAsFactors = FALSE) 
+lists <- expand.grid(country_codes,indexes,stringsAsFactors = FALSE) 
 
 
 
