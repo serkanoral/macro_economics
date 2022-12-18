@@ -3,7 +3,7 @@
     "path": "~/Documents/R/Macro_Economics/app/main.R",
     "project_path": "app/main.R",
     "type": "r_source",
-    "hash": "2997260047",
+    "hash": "3954779284",
     "contents": "",
     "dirty": false,
     "created": 1671281553380.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "2,18",
-        "scrollLine": "0"
+        "cursorPosition": "29,0",
+        "scrollLine": "11"
     },
     "folds": "",
-    "lastKnownWriteTime": 1671285277,
+    "lastKnownWriteTime": 1671350895,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1671285277967,
+    "last_content_update": 1671350895738,
     "read_only": false,
     "read_only_alternatives": []
 }

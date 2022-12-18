@@ -1,5 +1,5 @@
 box::use(
-  shiny[fluidPage, moduleServer, NS,reactiveFileReader,bindCache,fluidRow,column],
+  shiny[fluidPage, moduleServer, NS,reactiveFileReader,bindCache,fluidRow,column,splitLayout,br],
   readr[read_rds],
 )
 
@@ -14,10 +14,15 @@ box::use(
 #' @export
 ui <- function(id) {
   ns <- NS(id)
+  
   fluidPage(
+    br(),
+    br(),
     fluidRow(
-      column(6,input_country$ui(ns("input_country")),
-                   input_index$ui(ns("input_index")),
+      column(6,splitLayout(input_country$ui(ns("input_country")),
+                           input_index$ui(ns("input_index"))) ,
+             br(),
+             
              plot$ui(ns("plot"))))
       
     

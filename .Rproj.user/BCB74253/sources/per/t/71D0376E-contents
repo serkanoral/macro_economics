@@ -1,5 +1,6 @@
 box::use(
-  shiny[moduleServer, NS,selectInput]
+  shiny[moduleServer, NS,selectInput],
+  shinyWidgets[pickerInput]
 )
 
 box::use(app/logic/data_list)
@@ -7,10 +8,10 @@ box::use(app/logic/data_list)
 #' @export
 ui <- function(id) {
   ns <- NS(id)
-selectInput(ns("input_country"),
+  pickerInput(ns("input_country"),
             label = "Select Country",
             choices =data_list$country_names,
-            selected = "Turkey",multiple = TRUE )
+            selected = "Turkey",multiple = FALSE)
 }
 
 #' @export
