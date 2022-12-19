@@ -9,6 +9,5 @@ library(readr)
 library(tidyr)
 library(dplyr)
 library(purrr)
-library(bslib)
-library(shinyWidgets)
+library(shiny)
 

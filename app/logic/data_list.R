@@ -3,7 +3,10 @@ box::use(
   dplyr[select,distinct,pull],
   tidyr[drop_na],
   tibble[tibble],
+  readr[read_rds]
 )
+
+
 
 # index names
 #' @export
@@ -81,5 +84,9 @@ index_df <- tibble(index_names = index_names ,  indexes = indexes)
 lists <- expand.grid(country_codes,indexes,stringsAsFactors = FALSE) 
 
 
+df <- read_rds("app/logic/df.rds")
+
+#' @export
+country_names_ <- df |> pull(country_name) |> unique()
 
 
