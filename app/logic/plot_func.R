@@ -9,7 +9,9 @@ tidyr[pivot_wider],
 
 
 
-country_plot <- function(data , index_name = "Customer Price Index", country = c("Germany","Japan","United States")){
+country_plot <- function(data , 
+                         index_name = "Customer Price Index", 
+                         country = c("Germany","Japan","United States")) {
   
   data |> 
     filter(index_names == index_name & country_name %in% country) |> 
@@ -26,9 +28,10 @@ country_plot <- function(data , index_name = "Customer Price Index", country = c
 }
 
 
-index_plot <- function(data , 
-                          index_name = c("Real imports of goods and services","Real exports of goods and services"), 
-                          country = "Turkey"){
+index_plot <- function(data, 
+                          index_name = c("Real imports of goods and services",
+                                         "Real exports of goods and services"), 
+                          country = "Turkey") {
 
   
     data |> 

@@ -3,7 +3,7 @@
     "path": "~/Documents/R/Macro_Economics/app/view/plot_index.R",
     "project_path": "app/view/plot_index.R",
     "type": "r_source",
-    "hash": "1624294536",
+    "hash": "1788781542",
     "contents": "",
     "dirty": false,
     "created": 1671456420224.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "17,45",
-        "scrollLine": "0"
+        "cursorPosition": "23,64",
+        "scrollLine": "12"
     },
     "folds": "",
-    "lastKnownWriteTime": 1671545251,
+    "lastKnownWriteTime": 1671570441,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1671545251288,
+    "last_content_update": 1671570441954,
     "read_only": false,
     "read_only_alternatives": []
 }

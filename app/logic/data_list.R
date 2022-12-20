@@ -1,6 +1,6 @@
 box::use(
   countrycode,
-  dplyr[select, distinct,pull], 
+  dplyr[select, distinct, pull], 
   tidyr[drop_na],
   tibble[tibble],
   readr[read_rds]

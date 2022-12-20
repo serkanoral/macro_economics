@@ -1,0 +1,26 @@
+{
+    "id": "A508C0E4",
+    "path": "~/Documents/R/Macro_Economics/app/logic/data_list.R",
+    "project_path": "app/logic/data_list.R",
+    "type": "r_source",
+    "hash": "847216599",
+    "contents": "",
+    "dirty": false,
+    "created": 1671570784732.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "12,55",
+        "scrollLine": "5"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1671571121,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1671571121427,
+    "read_only": false,
+    "read_only_alternatives": []
+}

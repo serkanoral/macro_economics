@@ -3,7 +3,7 @@
     "path": "~/Documents/R/Macro_Economics/app/view/plot_country.R",
     "project_path": "app/view/plot_country.R",
     "type": "r_source",
-    "hash": "352829008",
+    "hash": "3554866059",
     "contents": "",
     "dirty": false,
     "created": 1671370697714.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "19,18",
-        "scrollLine": "14"
+        "cursorPosition": "40,43",
+        "scrollLine": "25"
     },
     "folds": "",
-    "lastKnownWriteTime": 1671551764,
+    "lastKnownWriteTime": 1671570342,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1671551764611,
+    "last_content_update": 1671570342864,
     "read_only": false,
     "read_only_alternatives": []
 }

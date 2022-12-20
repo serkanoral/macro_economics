@@ -12,7 +12,7 @@ box::use(
   app/view/plot_index
   
 )
-#bslib::bs_theme_preview()
+
 
 my_theme <- bs_theme(bootswatch = "darkly",
                      bg = "#2b344080", 

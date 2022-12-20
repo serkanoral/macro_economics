@@ -5,9 +5,8 @@ box::use(
 )
 
 box::use(
-  shiny[moduleServer, NS,tagList,selectizeInput,fluidPage,observeEvent],
+  shiny[moduleServer, NS,tagList,selectizeInput,fluidPage,observeEvent,br,fluidRow,column,req],
   echarts4r[echarts4rOutput,renderEcharts4r],
- shinyWidgets[pickerInput]
   
 )
 
@@ -17,17 +16,18 @@ data_list$index_names
 ui <- function(id) {
   ns <- NS(id)
   fluidPage(
-    selectizeInput(inputId = ns("select_index"),
-                label = "Select Index",
-                choices = data_list$index_names,
-                selected = "Customer Price Index",
-                multiple = FALSE),
-    selectizeInput(inputId = ns("select_country"),
-                   label = "Select Country",
-                   choices = data_list$country_names_,
-                   selected = c("Germany","Japan","United States"),
-                   multiple = TRUE, 
-                   options = list(maxItems = 5)),
+    br(), fluidRow(column(6, selectizeInput(inputId = ns("select_index"),
+                                            label = "Select Index",
+                                            choices = data_list$index_names,
+                                            selected = "Customer Price Index",
+                                            multiple = FALSE)),
+                   column(6, selectizeInput(inputId = ns("select_country"),
+                                            label = "Select Country",
+                                            choices = data_list$country_names_,
+                                            selected = c("Germany","Japan","United States"),
+                                            multiple = TRUE, 
+                                            options = list(maxItems = 5)))),
+
     echarts4rOutput(ns("plot_country"))
   )
   
@@ -38,9 +38,9 @@ ui <- function(id) {
 server <- function(id,df) {
   moduleServer(id,  function(input, output, session) {
     
-    output$plot_country <- renderEcharts4r({country_plot(data = df(),
-                                                 index_name = input$select_index ,
-                                                 country = input$select_country)})
+    output$plot_country <- renderEcharts4r({ req(input$select_index,input$select_country)
+      country_plot(data = df(),index_name = input$select_index ,
+                    country = input$select_country)})
    
   })
 }
