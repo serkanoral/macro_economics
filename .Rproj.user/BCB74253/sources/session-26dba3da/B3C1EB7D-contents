@@ -17,7 +17,7 @@ country_plot <- function(data , index_name = "Customer Price Index", country = c
     arrange(date) |> 
     e_charts(x = date) |> 
     e_line(serie = rate) |> 
-    e_theme("dark") |> 
+    e_theme("chalk") |> 
     e_datazoom(type = "slider") |> 
     e_tooltip(trigger = "axis") |> 
     e_title(index_name) 
@@ -37,7 +37,7 @@ index_plot <- function(data ,
     e_charts(x = date) |> 
     e_line_(serie = index_name[1]) |> 
     e_line_(serie = index_name[2], x_index = 1, y_index = 1) |>
-    e_theme("dark") |> 
+    e_theme("chalk") |> 
     e_datazoom(type = "slider") |> 
     e_tooltip(trigger = "axis") |> 
     e_title(country) 
