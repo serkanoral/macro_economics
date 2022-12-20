@@ -1,6 +1,6 @@
 box::use(
   countrycode,
-  dplyr[select,distinct,pull],
+  dplyr[select, distinct,pull], 
   tidyr[drop_na],
   tibble[tibble],
   readr[read_rds]
@@ -11,7 +11,7 @@ box::use(
 # index names
 #' @export
 index_names <- c("Customer Price Index", "Unemployment" 
-                 ,"Real gross fixed capital formation"
+                 , "Real gross fixed capital formation"
                  , "Real public consumption"
                  , "Retail trade"
                  , "Industrial production" 
@@ -54,14 +54,14 @@ index_names <- c("Customer Price Index", "Unemployment"
 
 # country codes and names
 #' @export
-country_code <- countrycode::codelist_panel |> 
-  select(country.name.en, wb_api2c ) |> 
-  distinct() |> 
+country_code <- countrycode::codelist_panel|> 
+  select(country.name.en, wb_api2c)|> 
+  distinct()|> 
   drop_na()
 
 # just country codes
 #' @export
-country_codes <- country_code |> pull(wb_api2c) 
+country_codes <- country_code|> pull(wb_api2c) 
 
 #' @export
 country_names <- country_code |> pull(country.name.en)

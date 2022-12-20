@@ -1,0 +1,26 @@
+{
+    "id": "38CBDCF1",
+    "path": "~/Documents/R/Macro_Economics/app/view/plot_index.R",
+    "project_path": "app/view/plot_index.R",
+    "type": "r_source",
+    "hash": "1624294536",
+    "contents": "",
+    "dirty": false,
+    "created": 1671456420224.0,
+    "source_on_save": false,
+    "relative_order": 3,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "17,45",
+        "scrollLine": "0"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1671545251,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1671545251288,
+    "read_only": false,
+    "read_only_alternatives": []
+}

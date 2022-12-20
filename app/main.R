@@ -2,7 +2,8 @@ box::use(
   shiny[fluidPage, moduleServer, NS,reactiveFileReader,bindCache,
         fluidRow,column,br,tabsetPanel,tabPanel,titlePanel,p],
   readr[read_rds],
-  bslib[bs_theme],
+  bslib[bs_theme,font_google,bs_add_variables],
+  thematic[thematic_shiny]
 )
 
 box::use(
@@ -11,8 +12,14 @@ box::use(
   app/view/plot_index
   
 )
+#bslib::bs_theme_preview()
 
-my_theme <- bs_theme(bootswatch = "darkly",bg = "#2b344080", fg = "#ffffff")
+my_theme <- bs_theme(bootswatch = "darkly",
+                     bg = "#2b344080", 
+                     fg = "#ffffff",
+                     base_font = font_google("Inter")) 
+
+thematic_shiny(font = "auto")
 
 #' @export
 ui <- function(id) {
@@ -28,15 +35,12 @@ ui <- function(id) {
       which means first index will be on the left and second index will be on the right."),
     p("You can filter the dates either with selecting zoom on the right corner of the chart 
     and make a selection on the chart. 
-    There is a slider below the chart, you can filter with that as well.
+    Also there is a slider below the chart, you can filter with that as well.
       Not all the countries have these index values so the chart may appear empthy."),
     br(),
     tabsetPanel(id = "tabs",type = "pills",
-                br(),
                 tabPanel(title = "Index",plot_country$ui(ns("plot_country"))),
-                tabPanel(title = "Country", plot_index$ui(ns("plot_index")))),
-    br(),
-    br()
+                tabPanel(title = "Country", plot_index$ui(ns("plot_index"))))
     
     
   )

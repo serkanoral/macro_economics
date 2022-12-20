@@ -5,11 +5,13 @@ box::use(
 )
 
 box::use(
-  shiny[moduleServer, NS,tagList,selectizeInput,fluidPage],
+  shiny[moduleServer, NS,tagList,selectizeInput,fluidPage,observeEvent],
   echarts4r[echarts4rOutput,renderEcharts4r],
-  
+ shinyWidgets[pickerInput]
   
 )
+
+data_list$index_names
 
 #' @export
 ui <- function(id) {
@@ -37,7 +39,7 @@ server <- function(id,df) {
   moduleServer(id,  function(input, output, session) {
     
     output$plot_country <- renderEcharts4r({country_plot(data = df(),
-                                                 index_name = input$select_index,
+                                                 index_name = input$select_index ,
                                                  country = input$select_country)})
    
   })
