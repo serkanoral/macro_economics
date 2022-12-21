@@ -1,0 +1,7 @@
+## cronR job
+## id:   job_dd0e684ed3947b94f6ea903ee77cfdc0
+## tags: 
+## desc: Scrap data
+0 3 15 * 1,2,3,4,5,6,7 /Library/Frameworks/R.framework/Resources/bin/Rscript '/Users/serkanoral/Documents/R/Macro_Economics/macro_load_data.R'  >> '/Users/serkanoral/Documents/R/Macro_Economics/macro_load_data.log' 2>&1
+
+ 

@@ -83,7 +83,7 @@ index_df <- tibble(index_names = index_names ,  indexes = indexes)
 #' @export
 lists <- expand.grid(country_codes,indexes,stringsAsFactors = FALSE) 
 
-df <- read_rds("app/logic/df.rds")
+
 
 #' @export
 country_names_ <- df |> pull(country_name) |> unique()

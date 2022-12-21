@@ -29,13 +29,14 @@ ui <- function(id) {
     theme = my_theme,
     titlePanel(title = "Macro Economics"),
     br(),
-    p("First chart on the Index tab, you can compare up to 5 countries for each index."),
-    p("Second chart on the Country tab, you can compare 2 indexes for each country. 
+    p("Index tab, you can compare up to 10 countries for each index."),
+    p("Country tab, you can compare 2 indexes for each country. 
     This is a dual axis chart, 
-      which means first index will be on the left and second index will be on the right."),
+      which means first index will be on the left and second index will be on the right. 
+      You have to choose two indexes to create a chart."),
     p("You can filter the dates either with selecting zoom on the right corner of the chart 
-    and make a selection on the chart. 
-    Also there is a slider below the chart, you can filter with that as well.
+    and make a selection on the chart, 
+    or there is a slider below the chart, you can slide and filter with that as well.
       Not all the countries have these index values so the chart may appear empthy."),
     br(),
     tabsetPanel(id = "tabs",type = "pills",

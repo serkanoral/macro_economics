@@ -12,6 +12,4 @@ library(purrr)
 library(shiny)
 library(bslib)
 library(thematic)
-library(cronR)
-library("packrat")
-library("rsconnect")
+
