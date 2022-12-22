@@ -1,4 +1,5 @@
-p, h2 {
+
+p, h2{
   padding-left: 5%;
   padding-right: 5%;
 }
@@ -8,7 +9,6 @@ p, h2 {
   padding-right: 5%;
 }
 
-
 .container-fluid {
   padding-left: 5%;
   padding-right: 5%;
@@ -16,11 +16,19 @@ p, h2 {
 }
 
 
-
 .shiny-input-container {
   display: inline;
   box-sizing: border-box;
- width: 100%;
+  width: 100%;
 }
+
+#app-download-download {
+ margin-left: 5%;
+ background-color: rgb(63,89,124);
+ 
+}
+
+
+
 
 

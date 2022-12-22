@@ -3,13 +3,15 @@ box::use(
         fluidRow,column,br,tabsetPanel,tabPanel,titlePanel,p],
   readr[read_rds],
   bslib[bs_theme,font_google,bs_add_variables],
-  thematic[thematic_shiny]
+  thematic[thematic_shiny],
+  
 )
 
 box::use(
   app/logic/get_data[load_data],
   app/view/plot_country,
-  app/view/plot_index
+  app/view/plot_index,
+  app/view/download
   
 )
 
@@ -36,9 +38,12 @@ ui <- function(id) {
       You have to choose two indexes to create a chart."),
     p("You can filter the dates either with selecting zoom on the right corner of the chart 
     and make a selection on the chart, 
-    or there is a slider below the chart, you can slide and filter with that as well.
+    or there is a slider below the chart, you can slide and filter with that as well. 
+    You can download the chart as well as the data.
       Not all the countries have these index values so the chart may appear empthy."),
-    br(),
+    
+    download$ui(ns("download")),
+    br(),br(),
     tabsetPanel(id = "tabs",type = "pills",
                 tabPanel(title = "Index",plot_country$ui(ns("plot_country"))),
                 tabPanel(title = "Country", plot_index$ui(ns("plot_index"))))
@@ -54,6 +59,7 @@ server <- function(id) {
     
     plot_country$server("plot_country", df)
     plot_index$server("plot_index",df)
+    download$server("download")
     
   })
 }

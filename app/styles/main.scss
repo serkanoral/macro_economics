@@ -1,31 +1,34 @@
-p, h2 {
+
+p, h2{
   padding-left: 5%;
-  padding-right:5%;
-  
+  padding-right: 5%;
 }
 
 #tabs {
   padding-left: 5%;
-  padding-right:5%;
+  padding-right: 5%;
 }
 
 .container-fluid {
   padding-left: 5%;
-  padding-right:5%;
-  padding-bottom:5%;
-  
+  padding-right: 5%;
+  padding-bottom: 5%;
 }
-
-
 
 
 .shiny-input-container {
-  display: inline-block;
+  display: inline;
   box-sizing: border-box;
+  width: 100%;
+}
+
+#app-download-download {
+ margin-left: 5%;
+ background-color: rgb(63,89,124);
  
 }
 
-.has-items{ 
-  width: 150%;
-  }
+
+
+
 

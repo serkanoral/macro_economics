@@ -1,5 +1,5 @@
 box::use(
-echarts4r[e_charts,e_line,e_line_,e_theme,e_datazoom,e_tooltip,e_title],
+echarts4r[e_charts,e_line,e_line_,e_theme,e_datazoom,e_tooltip,e_title,e_toolbox_feature],
 dplyr[filter,group_by,arrange],
 janitor[clean_names],
 tidyr[pivot_wider],
@@ -22,7 +22,8 @@ country_plot <- function(data ,
     e_theme("chalk") |> 
     e_datazoom(type = "slider") |> 
     e_tooltip(trigger = "axis") |> 
-    e_title(index_name) 
+    e_title(index_name) |> 
+    e_toolbox_feature(feature = "saveAsImage")
    
   
 }
@@ -43,7 +44,8 @@ index_plot <- function(data,
     e_theme("chalk") |> 
     e_datazoom(type = "slider") |> 
     e_tooltip(trigger = "axis") |> 
-    e_title(country) 
+    e_title(country) |> 
+    e_toolbox_feature(feature = "saveAsImage")
   
 }
 
